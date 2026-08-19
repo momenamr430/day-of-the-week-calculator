@@ -1,5 +1,3 @@
-from pycparser.c_ast import Switch
-
 try:
     q = int(input("enter the day: "))
     while not(31>=q>=1):
@@ -28,7 +26,7 @@ try:
         m = int(input("choose the month(1-12):"))
 except:
     print("please enter a valid month:")
-
+    
 year= input("enter the year(min: 1000, max: 9999):")
 while len(year) != 4:
     print("please enter a valid year:")
@@ -47,5 +45,5 @@ days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Fri
 for i in range(len(days)):
     if(i+1 ==result):
         result =days[i+1]
-print("{} {} {} is day: {}".format(q,month,year,result))
+print("{} {} {} is {}".format(q,month,year,result))
 
